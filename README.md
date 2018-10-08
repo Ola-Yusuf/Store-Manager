@@ -1,2 +1,5 @@
-# Store-Manager
-Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.
+# Description
+**Store Manager** is a web application that helps store owners manage sales and product inventory records.
+
+## Gh-page Link
+ Access the application through [https://HizyYusuf.github.io/Store-Manager/UI/](https://HizyYusuf.github.io/Store-Manager/UI/)
