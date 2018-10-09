@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="loginbox">
-            <img src="img/avartar.png" class="avartar">
+            <img src="image/avartar.png" class="avartar">
             <h1>Login Here</h1>
             <!-- signin form -->
             <form action="#" name="signin_form" id="signin_form">
@@ -22,7 +22,7 @@
                     <label for="email">Email</label>
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" id="password"  required>
+                    <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{5,10}" title="Must be Alphanumeric, min = 6 max = 8 characters" required>
                     <label for="password">Password</label>
                 </div>
                 <input type="submit" name="signin"  value="Signin">

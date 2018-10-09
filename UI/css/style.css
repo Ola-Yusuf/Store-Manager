@@ -1,0 +1,155 @@
+body{
+    margin: o;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
+    font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px grey; 
+    border-radius: 19px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: green; 
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+.loginbox {
+    width: 320px;
+    height: auto; 
+    background: rgb(85, 142, 168);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 0 5px rgb(184, 184, 184);
+    box-shadow: 0 0 0 5px rgb(184, 184, 184);
+}
+
+.avartar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: -15%;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 15px 0 20px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+#signup_form{
+    display: none;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    transition: 0.5 ease all;
+    top: 5px;
+}
+
+.form-group span {
+    font-size: 11px;
+    color: rgb(41, 1, 1);
+    font-style: italic;
+    font-family: monospace;
+}
+ 
+input:not(:focus):valid + label{
+    top: -12px;
+    left:1px;
+    font-size: 12px;
+    color: #fff;
+} 
+
+input:focus + label{
+    top: -12px;
+    bottom:55px;
+    left:1px;
+    font-size: 12px;
+    opacity: 2;
+    color: #fff;
+}
+
+input[value=""] + label{
+    top: -12px;
+    bottom:55px;
+    left:1px;
+    font-size: 12px;
+    opacity: 2;
+    color: #fff;
+}
+
+.form-group input{
+    border: none;
+    width: 100%;
+    padding-left: 5px;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 35px;
+    background: rgb(68, 224, 94);
+    color: #fff;
+    font-size: 18px;
+    border-radius:20px; 
+    margin-bottom: 25px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background:  rgb(134, 216, 147);
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    font-size: 12px;
+    font-style: bold;
+    color: #fff;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-style: italic;
+
+}
+
+
+
+
+
