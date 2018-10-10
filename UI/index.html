@@ -16,16 +16,16 @@
             <img src="image/avartar.png" class="avartar">
             <h1>Login Here</h1>
             <!-- signin form -->
-            <form action="#" name="signin_form" id="signin_form">
+            <form action="#" name="signin_form" id="signin_form" onsubmit="return validateLoginForm();">
                 <div class="form-group">
-                    <input type="email" name="email" id="email"  required >
-                    <label for="email">Email</label>
+                    <label for="email" >Email</label><span class="error" id="emailError">Email must have @ and . charater</span>
+                    <input type="email" name="email" id="email" required placeholder=" andela@andela.com">
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{5,10}" title="Must be Alphanumeric, min = 6 max = 8 characters" required>
-                    <label for="password">Password</label>
+                    <label for="password">Password</label><span class="error" id="passwordError">Password Must be 5 to 10 characters</span>
+                    <input type="password" name="password" id="password" required title=" Password Must be 5 to 10 characters" placeholder=" 5 to 10 character">
                 </div>
-                <input type="submit" name="signin"  value="Signin">
+                <input type="submit" name="signin" id="submit" value="Signin">
             </form>
             <!-- end signin form -->
         </div>
