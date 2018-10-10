@@ -10,7 +10,7 @@ function validateLoginForm(){
 } 
 function validatePassword(){
     let input = document.getElementById('password').value;
-    if(input.length > 4 && input.length < 11){
+    if(input.length > 5 && input.length < 11){
         document.getElementById('password').classList.remove('invalid');
         document.getElementById('passwordError').style.display = 'none';
     }else{
