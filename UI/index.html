@@ -18,6 +18,17 @@
             <!-- signin form -->
             <form action="#" name="signin_form" id="signin_form" onsubmit="return validateLoginForm();">
                 <div class="form-group">
+                    <label for="account">Select Account</label><br>
+                    <label class="account-type"><b>Admin</b>
+                      <input type="radio" name="account" value="Admin" required>
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="account-type"><b>Sales Attendant</b>
+                      <input type="radio" name="account" value="Sales Attendant">
+                      <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="form-group">
                     <label for="email" >Email</label><span class="error" id="emailError">Email must have @ and . charater</span>
                     <input type="email" name="email" id="email" required placeholder=" andela@andela.com">
                 </div>
