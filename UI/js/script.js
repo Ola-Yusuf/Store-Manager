@@ -33,12 +33,11 @@ function validateEmail(){
     }
 }
 
-
 let navigateTo = (url) => window.location.assign(url);
 
 function openNav() {
-    document.getElementById("sidenav").style.width = "26%";
-    document.getElementById("container").style.width = "54%";
+    document.getElementById("sidenav").style.width = "25%";
+    document.getElementById("container").style.width = "55%";
     document.getElementById("container").style.marginLeft = "6%";
     document.getElementById("openbtn").style.display = "none";
 }
