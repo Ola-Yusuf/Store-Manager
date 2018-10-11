@@ -5,27 +5,100 @@ body{
     font-family: sans-serif;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 15px grey; 
     border-radius: 19px;
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: green; 
     border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
 }
+
+.container{
+    top: 5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -5%);
+    background-color: transparent;
+    width: 80%;
+    height: auto;
+    padding-bottom: 25px;
+    margin-left: 0; 
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 93%;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    width:100%;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav a.active{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    background: none;
+    border:none;
+    position: absolute;
+    top: 0;
+    right: 19px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #FFF;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
 
 .loginbox {
     width: 320px;
@@ -111,7 +184,6 @@ input.invalid {
     color: #000;
 }
 
-/* The account radio button */
 .account-type {
     display: inline;
     position: relative;
@@ -125,14 +197,12 @@ input.invalid {
     user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .account-type input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-/* Create a custom radio button */
 .checkmark {
     position: absolute;
     top: 0;
@@ -143,29 +213,24 @@ input.invalid {
     border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
 .account-type:hover input ~ .checkmark {
     background-color: rgba(123, 211, 233, 0.781);
 }
 
-/* When the radio button is checked, add a blue background */
 .account-type input:checked ~ .checkmark {
     background-color: #2196F3;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .account-type input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .account-type .checkmark:after {
  	top: 6px;
 	left: 6px;
