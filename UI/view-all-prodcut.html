@@ -26,7 +26,8 @@
     <div class="container" id="container">
         <button class="openbtn" id="openbtn"  onclick="openNav()">☰ Action</button>
         <h1>List of Product</h1>
-        <table>
+        <input type="text" id="search" onkeyup="searchTable()" placeholder="Search for names.."><br><br>
+        <table id="table" >
             <tr>
                 <th>Product Name</th>
                 <th>Quantity</th>
