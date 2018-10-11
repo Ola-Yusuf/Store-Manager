@@ -7,7 +7,8 @@ function validateLoginForm(){
     }else{
         return true; 
     }  
-} 
+}
+ 
 function validatePassword(){
     let input = document.getElementById('password').value;
     if(input.length > 5 && input.length < 11){
@@ -30,4 +31,18 @@ function validateEmail(){
         document.getElementById('emailError').style.display = 'block';
         return "hasError";
     }
+}
+
+function openNav() {
+    document.getElementById("sidenav").style.width = "26%";
+    document.getElementById("container").style.width = "54%";
+    document.getElementById("container").style.marginLeft = "6%";
+    document.getElementById("openbtn").style.display = "none";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("container").style.width= "80%";
+    document.getElementById("container").style.marginLeft = "0";
+    document.getElementById("openbtn").style.display = "block";
 }
