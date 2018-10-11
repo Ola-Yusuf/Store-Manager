@@ -290,3 +290,33 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: rgb(231, 224, 224)
 }
+.button {
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px 1px;
+}
+
+.button1 {
+    border-radius: 10px;
+    background-color: #4CAF50;
+}
+
+.button2 {
+    border-radius: 10px;
+    background-color: rgb(230, 187, 0);
+}
+
+.button3 {
+    border-radius: 10px;
+    background-color: rgb(228, 51, 44);
+}
+
+.button1:hover, .button2:hover, .button3:hover{
+    color: #000;
+}
