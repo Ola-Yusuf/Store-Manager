@@ -16,7 +16,7 @@
             <img src="image/avartar.png" class="avartar">
             <h1>Login Here</h1>
             <!-- signin form -->
-            <form action="/UI/dashboard.html" name="signin_form" id="signin_form" onsubmit="return validateLoginForm();">
+            <form action="#" name="signin_form" id="signin_form" onsubmit="return validateLoginForm();">
                 <div class="form-group">
                     <label for="account">Select Account</label><br>
                     <label class="account-type"><b>Admin</b>
@@ -36,7 +36,8 @@
                     <label for="password">Password</label><span class="error" id="passwordError">Password Must be 6 to 10 characters</span>
                     <input type="password" name="password" id="password" required title=" Password Must be 6 to 10 characters" placeholder=" 6 to 10 character">
                 </div>
-                <input type="submit" name="signin" id="submit" value="Signin">
+                <input type="submit" name="signin" id="submit" onclick="navigateTo('dashboard.html')" value="Signin">
+                
             </form>
             <!-- end signin form -->
         </div>

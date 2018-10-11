@@ -33,6 +33,9 @@ function validateEmail(){
     }
 }
 
+
+let navigateTo = (url) => window.location.assign(url);
+
 function openNav() {
     document.getElementById("sidenav").style.width = "26%";
     document.getElementById("container").style.width = "54%";
