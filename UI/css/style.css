@@ -169,9 +169,9 @@ label {
     color: #000;
 }
 
-input{
+input, select{
     width: 100%;
-    height: 30px;
+    height: 45px;
     padding-left: 3px;
     font-size: 16px;
     border: 1px solid #ccc;
