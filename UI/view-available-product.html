@@ -23,10 +23,12 @@
         <a href="view-available-product.html" class="active">Available Product</a>
         <a href="all-sales-record.html">Sales Record</a>
         <a href="attendant-sales-record.html">Attendant Sales Record</a>
+        <a href="index.html">Logout</a>
     </div>
     
     <div class="container" id="container">
         <button class="openbtn" id="openbtn"  onclick="openNav()">☰ Action</button>
+        <div id="cart"><img src="image/cart-icon.png"><span id="productInCart"> 0</span> <button disabled id="createSalesBtn" class="button button4"  onclick="navigateTo('#')">Create Sales</button></div>
         <h1>Available Product</h1>
         <input type="text" id="search" onkeyup="searchTable()" placeholder="Search for names.."><br><br>
         <table id="table" >
@@ -40,37 +42,37 @@
                 <td>Charger</td>
                 <td>100</td>
                 <td>50</td>
-                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2">Add to Cart</button></td>
+                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2" onclick="addToCart(10);">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>Lamp</td>
                 <td>100</td>
                 <td>94</td>
-                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2">Add to Cart</button></td>
+                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2" onclick="addToCart(13);">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>HP Laptop</td>
                 <td>100</td>
                 <td>67</td>
-                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2">Add to Cart</button></td>
+                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2" onclick="addToCart(18);">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>Pressing Iron</td>
                 <td>87</td>
                 <td>50</td>
-                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2">Add to Cart</button></td>
+                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2" onclick="addToCart(19);">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>Tecno Cx Air</td>
                 <td>158</td>
                 <td>94</td>
-                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2">Add to Cart</button></td>
+                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2" onclick="addToCart(9);">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>Washing Machine</td>
                 <td>72</td>
                 <td>67</td>
-                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2">Add to Cart</button></td>
+                <td><a href="view-product-detail.html"><button type="button" class="button button1">View Detail</button></a><button type="button" class="button button2" onclick="addToCart(3);">Add to Cart</button></td>
             </tr>
         </table>
     </div>
