@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Store Manager App">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Ola-Yusuf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidenav" id="sidenav">
+        <button class="closebtn" onclick="closeNav()">X
+        </button>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Add Sales Attendant</a>
+        <a href="add-category.html">Add New Category</a>
+        <a href="add-new-product.html" >Add New Product</a>
+        <a href="view-all-prodcut.html" class="active">All Product</a>
+        <a href="#">Sales Record</a>
+    </div>
+    
+    <div class="container" id="container">
+        <button class="openbtn" id="openbtn"  onclick="openNav()">☰ Action</button>
+        <h1>List of Product</h1>
+        <input type="text" id="search" onkeyup="searchTable()" placeholder="Search for names.."><br><br>
+        <table id="table" >
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price (&#8358;)</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Charger</td>
+                <td>100</td>
+                <td>50</td>
+                <td><a href="#"><button type="button" class="button button1">View</button></a> <a href="#"><button type="button" class="button button2">Edit</button></a> <a href="#"><button type="button" class="button button3">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td>Lamp</td>
+                <td>100</td>
+                <td>94</td>
+                <td><a href="#"><button type="button" class="button button1">View</button></a> <a href="#"><button type="button" class="button button2">Edit</button></a> <a href="#"><button type="button" class="button button3">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td>HP Laptop</td>
+                <td>100</td>
+                <td>67</td>
+                <td><a href="#"><button type="button" class="button button1">View</button></a> <a href="#"><button type="button" class="button button2">Edit</button></a> <a href="#"><button type="button" class="button button3">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td>Pressing Iron</td>
+                <td>87</td>
+                <td>50</td>
+                <td><a href="#"><button type="button" class="button button1">View</button></a> <a href="#"><button type="button" class="button button2">Edit</button></a> <a href="#"><button type="button" class="button button3">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td>Tecno Cx Air</td>
+                <td>158</td>
+                <td>94</td>
+                <td><a href="#"><button type="button" class="button button1">View</button></a> <a href="#"><button type="button" class="button button2">Edit</button></a> <a href="#"><button type="button" class="button button3">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td>Washing Machine</td>
+                <td>72</td>
+                <td>67</td>
+                <td><a href="#"><button type="button" class="button button1">View</button></a> <a href="#"><button type="button" class="button button2">Edit</button></a> <a href="#"><button type="button" class="button button3">Delete</button></a></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
