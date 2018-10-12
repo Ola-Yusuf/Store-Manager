@@ -35,12 +35,40 @@ body{
     margin-left: 0; 
 }
 
-@media screen and (max-width: 500px) {
-    .column {
-        width: 93%;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 700px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 2px;
     }
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 10px;
+    }
+    .sidenav a {
+        font-size: 8px;
+    }
 }
 
 .sidenav {
@@ -59,11 +87,11 @@ body{
 .sidenav a{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
-    width:100%;
+     width:100%;
 }
 
 .sidenav a:hover{
@@ -98,7 +126,6 @@ body{
 .openbtn:hover {
     background-color: #444;
 }
-
 
 .loginbox {
     width: 320px;
@@ -137,18 +164,19 @@ h1{
     margin-bottom: 20px;
 }
 
-.form-group label {
+label {
     font-size: 14px;
     color: #000;
 }
 
-input{
+input, select{
     width: 100%;
-    height: 30px;
+    height: 45px;
     padding-left: 3px;
     font-size: 16px;
-    border: rgb(112, 164, 187) solid 0.5px;
-    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 } 
 
 input.invalid {
@@ -165,23 +193,25 @@ input.invalid {
     color: red;
     font-weight: bold;
   }
-  
-.loginbox input[type="submit"]{
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
     border: none;
-    width: 100%;
-    outline: none;
-    height: 35px;
-    background: rgb(68, 224, 94);
-    color: #fff;
-    font-size: 18px;
-    border-radius:20px; 
-    margin-bottom: 25px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.loginbox input[type="submit"]:hover{
+input[type=submit]:hover { 
     cursor: pointer;
-    background:  rgb(134, 216, 147);
+    background-color: #45a049;
     color: #000;
+}
+
+.account-type b{
+    font-size: 13px;
 }
 
 .account-type {
@@ -207,8 +237,8 @@ input.invalid {
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color: rgb(112, 164, 187);
     border-radius: 50%;
 }
@@ -232,8 +262,8 @@ input.invalid {
 }
 
 .account-type .checkmark:after {
- 	top: 6px;
-	left: 6px;
+ 	top: 8px;
+	left: 8px;
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
