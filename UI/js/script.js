@@ -67,3 +67,14 @@ let  searchTable = () => {
       } 
     }
   }
+
+let cartSet = new Set();
+let addToCart = (id) => {
+    cartSet.has(id) ? alert("Already Added") : '';
+    cartSet.add(id);
+    document.getElementById("productInCart").textContent = " "+cartSet.size;
+    sessionStorage.setItem('productToBeSold', Array.from(cartSet));
+    document.getElementById("createSalesBtn").disabled = false;
+}
+let getProductsInCart = () => sessionStorage.getItem('productToBeSold');
+let clearSession = () => sessionStorage.clear();
