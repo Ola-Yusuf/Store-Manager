@@ -318,6 +318,23 @@ tr:nth-child(odd) {
     background-color: rgb(228, 51, 44);
 }
 
-.button1:hover, .button2:hover, .button3:hover{
+.button4 {
+    border-radius: 10px;
+    font-size: 13.5px;
+    background-color: rgb(9, 172, 163);
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover{
     color: #000;
+}
+
+#cart{
+    height: 47px;
+    padding: 10px;
+    float: right;
+}
+
+#cart img{
+    height: 25px;
+    width: 25px;
 }
