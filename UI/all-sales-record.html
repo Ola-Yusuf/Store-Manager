@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Store Manager App">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Ola-Yusuf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidenav" id="sidenav">
+        <button class="closebtn" onclick="closeNav()">X
+        </button>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="attendant-profile.html">Profile</a>
+        <a href="add-new-attendant.html">Add Sales Attendant</a>
+        <a href="add-category.html">Add New Category</a>
+        <a href="add-new-product.html">Add New Product</a>
+        <a href="view-all-prodcut.html">All Product</a>
+        <a href="all-sales-record.html" class="active">Sales Record</a>
+        <a href="attendant-sales-record.html">Attendant Sales Record</a>
+    </div>
+    
+    <div class="container" id="container">
+        <button class="openbtn" id="openbtn"  onclick="openNav()">☰ Action</button>
+        <h1>All Sales Record</h1>
+        <input type="text" id="search" onkeyup="searchTable()" placeholder="Search for Attendant Name"><br><br>
+        <table id="table" >
+            <tr>
+                <th>Attendant Name</th>
+                <th>Sales Record ID</th>
+                <th>Worth (&#8358;)</th>
+                <th>Number of Product</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Lorenzo Brown</td>
+                <td>#Sales023</td>
+                <td>50400</td>
+                <td>5</td>
+                <td><a href="#"><button type="button" class="button button1">View Record Detail</button></a></td>
+            </tr>
+            <tr>
+                <td>Lorenzo Brown</td>
+                <td>#Sales023</td>
+                <td>22300</td>
+                <td>7</td>
+                <td><a href="#"><button type="button" class="button button1">View Record Detail</button></a></td>
+            </tr>
+            <tr>
+                <td>Chris Stone</td>
+                <td>#Sales019</td>
+                <td>13700</td>
+                <td>1</td>
+                <td><a href="#"><button type="button" class="button button1">View Record Detail</button></a></td>
+            </tr>
+            <tr>
+                <td>Gate Rohe </td>
+                <td>#Sales513</td>
+                <td>10800</td>
+                <td>3</td>
+                <td><a href="#"><button type="button" class="button button1">View Record Detail</button></a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
