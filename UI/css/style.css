@@ -303,7 +303,7 @@ tr:nth-child(odd) {
     margin: 2px 1px;
 }
 
-.button1 {
+.button1, .btn-pluse {
     border-radius: 10px;
     background-color: #4CAF50;
 }
