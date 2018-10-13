@@ -78,3 +78,25 @@ let addToCart = (id) => {
 }
 let getProductsInCart = () => sessionStorage.getItem('productToBeSold');
 let clearSession = () => sessionStorage.clear();
+
+let increaseProductCost = (price, quantity, dispalyCost, maxAvailable) => {
+    let pQuantity = parseInt(document.getElementById(quantity).textContent) + 1;
+    if( pQuantity < maxAvailable){
+        document.getElementById(quantity).textContent = pQuantity;
+        document.getElementById(dispalyCost).textContent = price * pQuantity;
+        document.getElementById("sumTotal").textContent = parseInt(document.getElementById("sumTotal").textContent) + price;
+    }else{
+        alert("Maximum Quantity Attain");
+    }
+}
+
+let decreaseProductCost = (price, quantity, dispalyCost) => {
+    let pQuantity = parseInt(document.getElementById(quantity).textContent) - 1;
+    if( pQuantity !== 0){
+        document.getElementById(quantity).textContent = pQuantity;
+        document.getElementById(dispalyCost).textContent = price * pQuantity;
+        document.getElementById("sumTotal").textContent = parseInt(document.getElementById("sumTotal").textContent) - price;
+    }else{
+        alert("Lowest Quantity Attain");
+    }
+}
