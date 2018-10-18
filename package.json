@@ -4,10 +4,10 @@
   "description": "This Store Manager App is to be use by a single store owner to manage products sold or available",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node -- index",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node -- api/index",
+    "test": "nyc mocha api/test --compilers js:babel-register --recursive",
     "lint": "eslint",
-    "lint-all": "eslint index.js test/*"
+    "lint-all": "eslint api/index.js api/test/*"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,13 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
     "eslint": "^5.7.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-react": "^7.11.1",
-    "nodemon": "^1.18.4"
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "nyc": "^13.1.0"
   }
 }
