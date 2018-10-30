@@ -1,0 +1,44 @@
+{
+  "name": "store-manager",
+  "version": "1.0.0",
+  "description": "This Store Manager App is to be use by a single store owner to manage products sold or available",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- api/index",
+    "test": "nyc mocha api/test --compilers js:babel-register --recursive",
+    "lint": "eslint",
+    "lint-all": "eslint api/index.js api/test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HizyYusuf/Store-Manager.git"
+  },
+  "author": "HizyYusuf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HizyYusuf/Store-Manager/issues"
+  },
+  "homepage": "https://HizyYusuf.github.io/Store-Manager/UI/",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "nyc": "^13.1.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.1"
+  }
+}
